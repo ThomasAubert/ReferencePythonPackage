@@ -24,5 +24,17 @@ This is a reference package with all best practices
 - [pyment package](https://pypi.org/project/pyment/)
 
 ## Building a python package
-1. Create a repository and clone in a well suited local directory
-2. 
+### First setup
+1. Create a repository and clone in a well suited local directory.
+2. Create a 'normal' directory with the name of your Python package.
+3. Inside this directory create a Python directory (package) with the same name.
+4. Create an init file inside the Python package.
+
+The 'normal' directory will have all the top level files and the Python package.
+Repeat step 3 and 4 to create subpackages inside the main package.
+
+### Making it installable
+1. Create the setup.py
+2. run ```pip install -e <absolute or relative path to package directory>```
+
+### Persisting dependencies
